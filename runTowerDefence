@@ -1,0 +1,2 @@
+ #!/bin/bash
+ export LD_LIBRARY_PATH=./SFML/lib && ./TowerDefence $1 $2	

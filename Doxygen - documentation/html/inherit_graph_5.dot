@@ -1,0 +1,7 @@
+digraph "Graficzna hierarchia klas"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="LevelsObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_levels_object.html",tooltip="Klasa umozliwiajaca wybor etapu gry przez gracza. "];
+}

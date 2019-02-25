@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TowerDefence: Dokumentacja pliku /home/vanhok/Pulpit/TowerDefece/Game.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TowerDefence
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Projekt z C++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_game_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Game.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;SFML/Graphics.hpp&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &quot;<a class="el" href="_h_u_d_8h_source.html">HUD.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_npc_8h_source.html">Npc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_tower_8h_source.html">Tower.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_gold_8h_source.html">Gold.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_animation_8h_source.html">Animation.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla Game.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="_game_8h__incl.png" border="0" usemap="#_2home_2vanhok_2_pulpit_2_tower_defece_2_game_8h" alt=""/></div>
+<map name="_2home_2vanhok_2_pulpit_2_tower_defece_2_game_8h" id="_2home_2vanhok_2_pulpit_2_tower_defece_2_game_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="_game_8h__dep__incl.png" border="0" usemap="#_2home_2vanhok_2_pulpit_2_tower_defece_2_game_8hdep" alt=""/></div>
+<map name="_2home_2vanhok_2_pulpit_2_tower_defece_2_game_8hdep" id="_2home_2vanhok_2_pulpit_2_tower_defece_2_game_8hdep">
+</map>
+</div>
+</div>
+<p><a href="_game_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html">Game</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Klasa opisujaca glowne skladowe wymagane do uruchomienia rozgrywki.  <a href="class_game.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:ad414428a4ce7abf7fea69c2090d17178"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_8h.html#ad414428a4ce7abf7fea69c2090d17178">RoadSize</a>&#160;&#160;&#160;35</td></tr>
+<tr class="separator:ad414428a4ce7abf7fea69c2090d17178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a05fd52b23c90543aab3a4289f5c3b847"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_8h.html#a05fd52b23c90543aab3a4289f5c3b847">game</a> (int, sf::RenderWindow &amp;)</td></tr>
+<tr class="separator:a05fd52b23c90543aab3a4289f5c3b847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29493e4c9011feb9d91cd9312ed06c62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_8h.html#a29493e4c9011feb9d91cd9312ed06c62">load</a> (std::string, <a class="el" href="class_game.html">Game</a> &amp;, char)</td></tr>
+<tr class="separator:a29493e4c9011feb9d91cd9312ed06c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0391ecd130a7d2785cd4a24a50e5f28"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad0391ecd130a7d2785cd4a24a50e5f28"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_game_8h.html#ad0391ecd130a7d2785cd4a24a50e5f28">deleteDynObjFromVect</a> (std::vector&lt; T *&gt; &amp;x)</td></tr>
+<tr class="memdesc:ad0391ecd130a7d2785cd4a24a50e5f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja do usuwania objektow z wektorow.  <a href="#ad0391ecd130a7d2785cd4a24a50e5f28">Więcej...</a><br /></td></tr>
+<tr class="separator:ad0391ecd130a7d2785cd4a24a50e5f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae548c1bf4e40d51b12fdb7f9fd23949"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_8h.html#aae548c1bf4e40d51b12fdb7f9fd23949">clearVectors</a> (std::vector&lt; <a class="el" href="class_animation.html">Animation</a> *&gt; &amp;, std::vector&lt; <a class="el" href="class_t___arrow.html">T_Arrow</a> *&gt; &amp;, std::vector&lt; <a class="el" href="class_t___gun.html">T_Gun</a> *&gt; &amp;, std::vector&lt; <a class="el" href="class_t___cannon.html">T_Cannon</a> *&gt; &amp;, std::vector&lt; <a class="el" href="class_t___supp.html">T_Supp</a> *&gt; &amp;, std::vector&lt; sf::Vector2i &gt; &amp;)</td></tr>
+<tr class="memdesc:aae548c1bf4e40d51b12fdb7f9fd23949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja do czyszczenia wektorow.  <a href="#aae548c1bf4e40d51b12fdb7f9fd23949">Więcej...</a><br /></td></tr>
+<tr class="separator:aae548c1bf4e40d51b12fdb7f9fd23949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20db0fb47d62bde29d066b066aed3129"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_8h.html#a20db0fb47d62bde29d066b066aed3129">lvlUpTower</a> (std::vector&lt; <a class="el" href="class_t___arrow.html">T_Arrow</a> *&gt; &amp;, std::vector&lt; <a class="el" href="class_t___gun.html">T_Gun</a> *&gt; &amp;, std::vector&lt; <a class="el" href="class_t___cannon.html">T_Cannon</a> *&gt; &amp;, std::vector&lt; <a class="el" href="class_t___supp.html">T_Supp</a> *&gt; &amp;, <a class="el" href="class_gold.html">Gold</a> &amp;, sf::Vector2i)</td></tr>
+<tr class="memdesc:a20db0fb47d62bde29d066b066aed3129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja pozwalajaca ulepszac wieze.  <a href="#a20db0fb47d62bde29d066b066aed3129">Więcej...</a><br /></td></tr>
+<tr class="separator:a20db0fb47d62bde29d066b066aed3129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja definicji</h2>
+<a id="ad414428a4ce7abf7fea69c2090d17178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad414428a4ce7abf7fea69c2090d17178">&#9670;&nbsp;</a></span>RoadSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RoadSize&#160;&#160;&#160;35</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_game_8h_source.html#l00010">10</a> pliku <a class="el" href="_game_8h_source.html">Game.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="aae548c1bf4e40d51b12fdb7f9fd23949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae548c1bf4e40d51b12fdb7f9fd23949">&#9670;&nbsp;</a></span>clearVectors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clearVectors </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_animation.html">Animation</a> *&gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_t___arrow.html">T_Arrow</a> *&gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_t___gun.html">T_Gun</a> *&gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_t___cannon.html">T_Cannon</a> *&gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_t___supp.html">T_Supp</a> *&gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; sf::Vector2i &gt; &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja do czyszczenia wektorow. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">std::vector&lt;Animation</td><td>*&gt; &amp; wektor wskaznikow na objekt klasy <a class="el" href="class_animation.html" title="Klasa opisujaca animacje. ">Animation</a> </td></tr>
+    <tr><td class="paramname">std::vector&lt;T_Arrow</td><td>*&gt; &amp; wektor wskaznikow na objekt klasy <a class="el" href="class_t___arrow.html" title="Klasa potomna opisujaca 1 rodzaj wiez. ">T_Arrow</a> </td></tr>
+    <tr><td class="paramname">std::vector&lt;T_Gun</td><td>*&gt; &amp; wektor wskaznikow na objekt klasy <a class="el" href="class_t___gun.html" title="Klasa potomna opisujaca 2 rodzaj wiez. ">T_Gun</a> </td></tr>
+    <tr><td class="paramname">std::vector&lt;T_Cannon</td><td>*&gt; &amp; wektor wskaznikow na objekt klasy <a class="el" href="class_t___cannon.html" title="Klasa potomna opisujaca 4 rodzaj wiez. ">T_Cannon</a> </td></tr>
+    <tr><td class="paramname">std::vector&lt;T_Supp</td><td>*&gt; &amp; wektor wskaznikow na objekt klasy <a class="el" href="class_t___supp.html" title="Klasa potomna opisujaca 3 rodzaj wiez. ">T_Supp</a> </td></tr>
+    <tr><td class="paramname">std::vector&lt;sf::Vector2i&gt;</td><td>&amp; wektor typu sf::Vector2i przechowujacy pozycje wiez </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_game_fun_8cpp_source.html#l00011">11</a> pliku <a class="el" href="_game_fun_8cpp_source.html">GameFun.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad0391ecd130a7d2785cd4a24a50e5f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0391ecd130a7d2785cd4a24a50e5f28">&#9670;&nbsp;</a></span>deleteDynObjFromVect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void deleteDynObjFromVect </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja do usuwania objektow z wektorow. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">std::vector&lt;T</td><td>*&gt;&amp; gdzie T jest typem danych</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Uniwersalna funkcja do usuwania stworzonych wczesniej dynamicznych obiektow. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_game_fun_8cpp_source.html#l00003">3</a> pliku <a class="el" href="_game_fun_8cpp_source.html">GameFun.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a05fd52b23c90543aab3a4289f5c3b847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05fd52b23c90543aab3a4289f5c3b847">&#9670;&nbsp;</a></span>game()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void game </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">int</td><td>id okresla etap ktory wybral gracz </td></tr>
+    <tr><td class="paramname">sf::RenderWindow</td><td>&amp;window oryginal okna gry</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Jest to glowna funkcja rozgrywki. W zaleznosci od podanego w jej wywolaniu argumentu id zostaja wczytane wszystkie ustawienia dotyczace tego etapu, takie jak ilosc przeciwnikow, ilosc zlota, ilosc zyc gracza itp. W wczytywaniu ustawien bierze udzial pomocnicza funkcja: void <a class="el" href="_game_8h.html#a29493e4c9011feb9d91cd9312ed06c62">load(std::string filename,Game &amp;game,char type)</a>;</p>
+<p>W opraciu o uzyskane z plikow informacje, funkcja ta tworzy wszystkie potrzebne do gry elementy z ktorych gracz moze korzystac. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_game_8cpp_source.html#l00003">3</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a29493e4c9011feb9d91cd9312ed06c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29493e4c9011feb9d91cd9312ed06c62">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void load </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td>
+          <td class="paramname"><em>game</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">std::string</td><td>filename nazwa pliku z ktorego beda wczytywane informacje </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_game.html" title="Klasa opisujaca glowne skladowe wymagane do uruchomienia rozgrywki. ">Game</a></td><td>&amp;game oryginal obiektu klasy <a class="el" href="class_game.html" title="Klasa opisujaca glowne skladowe wymagane do uruchomienia rozgrywki. ">Game</a>, do niego beda przypisane wszystkie pobrane informacje </td></tr>
+    <tr><td class="paramname">char</td><td>type okresla typ operacji</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Otwiera plik o podanej nazwie, pobiera z niego informacje i w oparciu o podany typ operacji przypisuje je do obiektu game. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_game_fun_8cpp_source.html#l00070">70</a> pliku <a class="el" href="_game_fun_8cpp_source.html">GameFun.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a20db0fb47d62bde29d066b066aed3129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20db0fb47d62bde29d066b066aed3129">&#9670;&nbsp;</a></span>lvlUpTower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lvlUpTower </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_t___arrow.html">T_Arrow</a> *&gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_t___gun.html">T_Gun</a> *&gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_t___cannon.html">T_Cannon</a> *&gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_t___supp.html">T_Supp</a> *&gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_gold.html">Gold</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2i&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja pozwalajaca ulepszac wieze. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">std::vector&lt;T_Arrow</td><td>*&gt; &amp; wektor wskaznikow na objekt klasy <a class="el" href="class_t___arrow.html" title="Klasa potomna opisujaca 1 rodzaj wiez. ">T_Arrow</a> </td></tr>
+    <tr><td class="paramname">std::vector&lt;T_Gun</td><td>*&gt; &amp; wektor wskaznikow na objekt klasy <a class="el" href="class_t___gun.html" title="Klasa potomna opisujaca 2 rodzaj wiez. ">T_Gun</a> </td></tr>
+    <tr><td class="paramname">std::vector&lt;T_Cannon</td><td>*&gt; &amp; wektor wskaznikow na objekt klasy <a class="el" href="class_t___cannon.html" title="Klasa potomna opisujaca 4 rodzaj wiez. ">T_Cannon</a> </td></tr>
+    <tr><td class="paramname">std::vector&lt;T_Supp</td><td>*&gt; &amp; wektor wskaznikow na objekt klasy <a class="el" href="class_t___supp.html" title="Klasa potomna opisujaca 3 rodzaj wiez. ">T_Supp</a> </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_gold.html" title="Klasa opisujaca Zloto posiadane przez gracza. ">Gold</a></td><td>&amp; obiekt klasy <a class="el" href="class_gold.html" title="Klasa opisujaca Zloto posiadane przez gracza. ">Gold</a> </td></tr>
+    <tr><td class="paramname">sf::Vector2i</td><td>okresla pozycje myszy na ekranie</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Jesli gracz ma wystarczajaca ilosc zlota to funkcja ulepsza wybrana wieze, zwiekszajac jej obrazenia oraz zmniejszajac czas oczekiwania na kolejny atak. Maksymalnie wieze mozna ulepszyc 2 razy. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_game_fun_8cpp_source.html#l00049">49</a> pliku <a class="el" href="_game_fun_8cpp_source.html">GameFun.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_dd2a2ae1c0d75c0ce5d6e95b8e542ca7.html">TowerDefece</a></li><li class="navelem"><a class="el" href="_game_8h.html">Game.h</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

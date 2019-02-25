@@ -1,0 +1,26 @@
+var annotated_dup =
+[
+    [ "Animation", "class_animation.html", "class_animation" ],
+    [ "Animation_Parameters", "struct_animation___parameters.html", "struct_animation___parameters" ],
+    [ "Cavalry_1", "class_cavalry__1.html", "class_cavalry__1" ],
+    [ "Cavalry_2", "class_cavalry__2.html", "class_cavalry__2" ],
+    [ "Game", "class_game.html", "class_game" ],
+    [ "Gold", "class_gold.html", "class_gold" ],
+    [ "HUD", "class_h_u_d.html", "class_h_u_d" ],
+    [ "Infantry_1", "class_infantry__1.html", "class_infantry__1" ],
+    [ "Infantry_2", "class_infantry__2.html", "class_infantry__2" ],
+    [ "LevelsObject", "class_levels_object.html", "class_levels_object" ],
+    [ "Menu", "class_menu.html", "class_menu" ],
+    [ "Npc", "class_npc.html", "class_npc" ],
+    [ "Npcbuf", "struct_npcbuf.html", "struct_npcbuf" ],
+    [ "Point", "class_point.html", "class_point" ],
+    [ "Presentation", "class_presentation.html", "class_presentation" ],
+    [ "Road", "class_road.html", "class_road" ],
+    [ "ShotClass", "class_shot_class.html", "class_shot_class" ],
+    [ "T_Arrow", "class_t___arrow.html", "class_t___arrow" ],
+    [ "T_Cannon", "class_t___cannon.html", "class_t___cannon" ],
+    [ "T_Gun", "class_t___gun.html", "class_t___gun" ],
+    [ "T_Supp", "class_t___supp.html", "class_t___supp" ],
+    [ "Tower", "class_tower.html", "class_tower" ],
+    [ "TowerPlace", "class_tower_place.html", "class_tower_place" ]
+];

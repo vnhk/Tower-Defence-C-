@@ -1,0 +1,15 @@
+digraph "Graficzna hierarchia klas"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Tower",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tower.html",tooltip="Klasa podstawowa opisujaca wieze. "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="T_Arrow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t___arrow.html",tooltip="Klasa potomna opisujaca 1 rodzaj wiez. "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="T_Cannon",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t___cannon.html",tooltip="Klasa potomna opisujaca 4 rodzaj wiez. "];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="T_Gun",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t___gun.html",tooltip="Klasa potomna opisujaca 2 rodzaj wiez. "];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="T_Supp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t___supp.html",tooltip="Klasa potomna opisujaca 3 rodzaj wiez. "];
+}
